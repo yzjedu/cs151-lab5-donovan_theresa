@@ -2,7 +2,7 @@
 1. create a variable for balance and set it to 1000
 2. output"The initial balance of your account $1000"
 2. set option to A
-3. while option is not E
+3. while option is not sentinel
    1. prompt user to input option "
    D - Deposit
    W - Withdraw
@@ -30,5 +30,8 @@
       7. prompt the user for their option again
    8. if the balance is less than 0
       9. output "warning you will be charged 5% interest"
+   10. if user chooses E
+       11. option is set to sentinel
+10. output thank you for using our program
    
 
