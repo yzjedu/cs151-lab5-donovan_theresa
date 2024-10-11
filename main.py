@@ -11,12 +11,17 @@ from optparse import AmbiguousOptionError
 
 balance = 1000
 print('The initial balance in your account is 1000')
+option = 'A'
+
+while option != sentinel:
+    option = input('What would you like to do with your account today?\n'
+                   'D - deposit\n'
+                   'W - withdraw\n'
+                   'V - view balance\n'
+                   'E - exit\n')
+    option = option.upper()
 
 #D=Deposit
 #W=Withdraw
 #V=View Balance
 #E=Exit
-
-option = A
-
-while option != sentinel:
