@@ -16,7 +16,8 @@
       4. otherwise
          5. add money to balance
          5. output new balance
-         4. prompt user to input an option   
+         6. money is set back to 0
+         4. prompt user to input an option
    4. if user chooses W 
       1. prompt user to input money being withdrawn 
       2. if money is < 0

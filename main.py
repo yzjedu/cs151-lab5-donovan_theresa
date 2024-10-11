@@ -13,15 +13,46 @@ balance = 1000
 print('The initial balance in your account is 1000')
 option = 'A'
 
-while option != sentinel:
+while option != 'sentinel':
     option = input('What would you like to do with your account today?\n'
-                   'D - deposit\n'
+                   'D - Deposit\n'
                    'W - withdraw\n'
-                   'V - view balance\n'
-                   'E - exit\n')
-    option = option.upper()
+                   'V - View balance\n'
+                   'E - Exit\n')
+    option = option.upper().strip()
 
-#D=Deposit
+# D-Deposit
+    if option == 'D':
+        money = float(input('how much money would you like to deposit? '))
+        if money < 0:
+            print('Sorry, you cannot output a negative')
+        else:
+            balance += money
+            print('Your balance is', balance, 'dollars' '\n')
+            money = 0
+
 #W=Withdraw
+    elif option == 'W':
+        money = float(input('how much money would you like to withdraw? '))
+        if money < 0:
+            print('Sorry, you cannot input a negative')
+        else:
+            balance -= money
+            print('Your balance is', balance, 'dollars \n')
+
 #V=View Balance
+    elif option == 'V':
+        print('Your balance is', balance,'dollars')
+
 #E=Exit
+    elif option == 'E':
+        print('Thank You for using this program')
+        option = 'sentinel'
+
+    if balance < 0:
+        print('Warning your balance is negative, you will be charged 5% interest\n')
+
+
+
+
+
