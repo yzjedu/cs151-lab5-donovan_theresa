@@ -29,7 +29,7 @@ while option != 'sentinel':
         else:
             balance += money
             print('Your balance is', balance, 'dollars' '\n')
-            money = 0
+
 
 #W=Withdraw
     elif option == 'W':
