@@ -77,7 +77,7 @@ def get_user_input():
         return None, None, None
 
     # Prompt for the key
-    key = input("Please enter a key for encryption/decryption: ")
+    key = input("Please enter a key for enRDcryption/decryption: ")
 
     # Ask whether to encrypt or decrypt
     action = input("\nDo you want to (e)ncrypt or (d)ecrypt the file? Enter 'e' or 'd': ").strip().lower()
