@@ -7,8 +7,15 @@
 # Data In: Letter of the function chosen by user
 # Data Out:  Operation of chosen function
 # Credits: In Class
-from optparse import AmbiguousOptionError
 
+key = int(input('Enter passkey'))
+
+while key != 12345:
+   print('Incorrect passkey')
+   key = int(input('Enter passkey'))
+
+
+from optparse import AmbiguousOptionError
 balance = 1000
 print('The initial balance in your account is 1000')
 option = 'A'
