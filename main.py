@@ -8,11 +8,7 @@
 # Data Out:  Operation of chosen function
 # Credits: In Class
 
-key = int(input('Enter passkey'))
 
-while key != 12345:
-   print('Incorrect passkey')
-   key = int(input('Enter passkey'))
 
 
 from optparse import AmbiguousOptionError
@@ -55,7 +51,7 @@ while option != 'sentinel':
     elif option == 'E':
         print('Thank You for using this program')
         option = 'sentinel'
-
+# warning
     if balance < 0:
         print('Warning your balance is negative, you will be charged 5% interest\n')
 
